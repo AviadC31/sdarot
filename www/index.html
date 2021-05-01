@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Sdarot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" type="text/css" href="./css/GalleryStyle.css">
+</head>
+<body onLoad="loadPage()">
+    <div class="wrapper d-flex flex-column justify-content-center align-items-center">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="p-2">
+                <div id="joinUs">!הצטרפו אלינו</div>
+                <ul class="nav navbar-nav flex-row  justify-content-center">
+                    <li class="nav-item"><img class="icons" alt="" src="../assets/images/Icons/‏‏‏BlueTwitter.png"/></li>
+                    <li class="nav-item"><img class="icons" alt="" src="../assets/images/Icons/‏‏BlueTelegram.png"/></li>
+                    <li class="nav-item"><img class="icons" alt="" src="../assets/images/Icons/BlueInstagram.png"/></li>
+                    <li class="nav-item"><img class="icons" alt="" src="../assets/images/Icons/BlueFacebook.png"/></li>
+                </ul>
+            </div>
+            <div class="p-2">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white" style="padding:0 7vw 0 10vw;">
+                  <button class="hamburger navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar" >
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="nav navbar-nav flex-row">
+                    <div class="navbar-collapse collapse justify-content-center" id="collapsingNavbar">
+						<div class="hidden">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" style="color:#0075DE; font-size: 1.5vw; font-weight: 500;" href="#" data-toggle="collapse">צור קשר</a>
+                            </li>
+                            <li class="point">
+                                <a class="nav-link" style="color:#0075DE; font-size: 1.5vw; font-weight: 500;" href="#">•</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color:#0075DE; font-size: 1.5vw; font-weight: 500;" href="#" data-toggle="collapse">אודות</a>
+                            </li>
+                            <li class="point">
+                                <a class="nav-link" style="color:#0075DE; font-size: 1.5vw; font-weight: 500;" href="#">•</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color:#0075DE; font-size: 1.5vw; font-weight: 500;" href="#">רכישת מנוי</a>
+                            </li>
+                            <li class="point">
+                                <a class="nav-link" style="color:#0075DE; font-size: 1.5vw; font-weight: 500;" href="#">•</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color:#0075DE; font-size: 1.5vw; font-weight: 500;" href="#" data-toggle="collapse">סדרות</a>
+                            </li>
+                            <li class="point">
+                                <a class="nav-link" style="color:#0075DE; font-size: 1.5vw; font-weight: 500;" href="#">•</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color:#0075DE; font-size: 1.5vw; font-weight: 500;" href="#">ראשי</a>
+                            </li>
+                        </ul>
+						</div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="hidden">
+                <img id="logo" alt="" src="../assets/images/SdarotLogo.png"/>
+            </div>
+        </div>
+        <div class="input form-group has-search" style="width: 40vw; height: 1vw; margin:1vw 0 4vw 0;">
+                <span class="fa fa-search form-control-feedback" style="position: absolute; width: 2.375vw; height: 2.375vw; line-height: 2.375vw; text-align: center; pointer-events: none; color: #0075DE;"></span>
+                <input type="text" class="form-control" placeholder="חפש סדרות, סרטים, ועוד..." style="height: 2.375vw; direction:rtl; padding-left: 2.375vw; border: 0.12vw solid #0075DE; font-size: 1.5vw; line-height: 5vw; font-weight: 300; border-radius: 0.3vw;">
+        </div>
+        <div class="btnsContainer" style="margin:0 0 3vw 0;">
+                <button type="button" class="btn btn-warning" style="padding:0.15vw; font-size: 1.1vw; border-radius: 0.3vw; background:#FFD54B; color:white; width: 6.05vw; margin:.5vw;">התחברות</button>
+                <button type="button" class="btn btn-warning" style="padding:0.15vw; font-size: 1.1vw; border-radius: 0.3vw; background:#FFD54B; color:white; width: 6.05vw; margin:.5vw;">הרשמה</button>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 80vw; margin:0 0 6vw 0;">
+
+          <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ul>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-slide-to="0" >
+                    <img class="d-block w-100" src="../assets/images/Banner/blackspace.jpg" style="height: 38.1vw; border-radius: 1vw;" alt="First slide">
+                  </div>
+                  <div class="carousel-item" data-slide-to="1" >
+                    <img class="d-block w-100" src="../assets/images/Banner/greysAnatomy.jpg" style="height: 38.1vw; border-radius: 1vw;" alt="Second slide">
+                  </div>
+                  <div class="carousel-item" data-slide-to="2" >
+                    <img class="d-block w-100" src="../assets/images/Banner/hazarot.jpeg" style="height: 38.1vw; border-radius: 1vw;" alt="Third slide">
+                  </div>
+                </div>
+
+        </div>
+        <div class="speretor d-flex flex-row justify-content-center" style="width:100%;">
+                <div class="p-0" style="width: 36vw; height: .1vw; background: #0075DE; margin-top: 1vw"></div>
+                <div style="color:#0075DE; font-size: 1.5vw; font-weight: 700; margin: 0 2vw 0 2vw;">סדרות</div>
+                <div class="p-0" style="width: 36vw; height: .1vw; background: #0075DE; margin-top: 1vw"></div>
+        </div>
+        <div class="btnsContainer" style="margin:4vw 0 4vw 0;">
+                <button type="button" class="btn btn-warning" style="padding:0.1vw; font-size: 1vw; font-weight: 500; border: .15vw solid #ffc107; border-radius: 0.3vw; background:white; color:#FFD54B; width: 9vw; margin:.5vw;">סדרות מדורגות</button>
+                <button type="button" class="btn btn-warning" style="padding:0.1vw; font-size: 1vw; font-weight: 500; border: .15vw solid #ffc107; border-radius: 0.3vw; background:#FFD54B; color:white; width: 9vw; margin:.5vw;">סדרות פופולריות</button>
+                <button type="button" class="btn btn-warning" style="padding:0.1vw; font-size: 1vw; font-weight: 500; border: .15vw solid #ffc107; border-radius: 0.3vw; background:white; color:#FFD54B; width: 9vw; margin:.5vw;">סדרות חדשות</button>
+        </div>
+    </div>
+    <div class="w-gallery">
+            <section id="responsiveGallery-container" class="responsiveGallery-container">
+             <a class="responsiveGallery-btn responsiveGallery-btn_prev" href="javascript:void(0);"></a> 
+             <a class="responsiveGallery-btn responsiveGallery-btn_next" href="javascript:void(0);"></a>
+              <ul class="responsiveGallery-wrapper">
+                <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="../assets/images/fauda.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+                  <div class="w-responsivGallery-info">
+                    <h2 class="responsivGallery-name">פאודה</h2>
+                  </div>
+                </li>
+                <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="../assets/images/gamesOfThrones.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+                  <div class="w-responsivGallery-info">
+                    <h2 class="responsivGallery-name">משחקי הכס</h2>
+                  </div>
+                </li>
+                <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="../assets/images/greysAnatomy.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+                  <div class="w-responsivGallery-info">
+                    <h2 class="responsivGallery-name">האנטומיה של גריי</h2>
+                  </div>
+                </li>
+                <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="../assets/images/taagad.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+                  <div class="w-responsivGallery-info">
+                    <h2 class="responsivGallery-name">תאג"ד</h2>
+                  </div>
+                </li>
+                <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="../assets/images/friends.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+                  <div class="w-responsivGallery-info">
+                    <h2 class="responsivGallery-name">חברים</h2>
+                  </div>
+                </li>
+                <li class="responsiveGallery-item"> <a href="#" class="responsivGallery-link"><img src="../assets/images/hasultan.jpg" height="320" width="320" alt="" class="responsivGallery-pic"></a>
+                  <div class="w-responsivGallery-info">
+                    <h2 class="responsivGallery-name">הסולטן</h2>
+                  </div>
+                </li>
+              </ul>
+            </section>
+    </div>
+    <div class="wrapper d-flex flex-column justify-content-center align-items-center">
+        <button type="button" class="btn" style="padding:0 1vw 0 1vw; font-size: 1.3vw; font-weight: 500; border: .15vw solid #0075DE; border-radius: 0.3vw; background:#0075DE; color:white; margin-top:7vw;">לצפייה</button>
+        <div class="speretor d-flex flex-row justify-content-center" style="width:100%; margin:6vw 0 4vw 0;">
+            <div class="p-0" style="width: 31.5vw; height: .1vw; background: #0075DE; margin-top: 1vw"></div>
+            <div style="color:#0075DE; font-size: 1.5vw; font-weight: 700; margin: 0 2vw 0 2vw;">פרקים חדשים באתר</div>
+            <div class="p-0" style="width: 31.5vw; height: .1vw; background: #0075DE; margin-top: 1vw"></div>
+        </div>
+        <div class="upcomingL1 d-flex flex-wrap">
+                <div class="card" style="width: 18.5vw; margin: 1vw; border-radius: 0.7vw;">
+                    <img class="card-img-top" src="../assets/images/tzafuf.jpg" alt="Card image cap" style="width: 18.5vw; height: 14.5vw; border-radius: 0.7vw 0.7vw 0 0;">
+                    <div class="card-body" style="width: 18.5vw; height: 4vw; text-align: center; padding:.2vw 0 0 0; background:#0075DE; color:white; border-radius: 0 0 0.7vw 0.7vw;">
+                      <p class="card-text" style="margin-bottom:0; font-size: 1.5vw; font-weight: 700;">צפוף</p>
+                      <p class="card-text" style="margin-bottom:.5vw; font-size: 1vw;">עונה 4 פרק 9</p>
+                      <button type="button" class="btn btn-warning" style="padding:0 1vw 0 1vw; font-size: 1vw; font-weight: 500; border: .15vw solid #0075DE; border-radius: 0.3vw; background:#0075DE; color:white; margin:.2vw;">לצפייה</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18.5vw; margin: 1vw; border-radius: 0.7vw;">
+                    <img class="card-img-top" src="../assets/images/nabsu.jpg" alt="Card image cap" style="width: 18.5vw; height: 14.5vw; border-radius: 0.7vw 0.7vw 0 0;">
+                    <div class="card-body" style="width: 18.5vw; height: 4vw; text-align: center; padding:.2vw 0 0 0; background:#0075DE; color:white; border-radius: 0 0 0.7vw 0.7vw;">
+                      <p class="card-text" style="margin-bottom:0; font-size: 1.5vw; font-weight: 700;">נבסו</p>
+                      <p class="card-text" style="margin-bottom:.5vw; font-size: 1vw;">עונה 2 פרק 9</p>
+                      <button type="button" class="btn btn-warning" style="padding:0 1vw 0 1vw; font-size: 1vw; font-weight: 500; border: .15vw solid #0075DE; border-radius: 0.3vw; background:#0075DE; color:white; margin:.2vw;">לצפייה</button>
+
+                    </div>
+                </div>
+                <div class="card" style="width: 18.5vw; margin: 1vw; border-radius: 0.7vw;">
+                    <img class="card-img-top" src="../assets/images/hiBalaila.jpeg" alt="Card image cap" style="width: 18.5vw; height: 14.5vw; border-radius: 0.7vw 0.7vw 0 0;">
+                    <div class="card-body" style="width: 18.5vw; height: 4vw; text-align: center; padding:.2vw 0 0 0; background:#0075DE; color:white; border-radius: 0 0 0.7vw 0.7vw;">
+                        <p class="card-text" style="margin-bottom:0; font-size: 1.5vw; font-weight: 700;">חי בלילה</p>
+                      <p class="card-text" style="margin-bottom:.5vw; font-size: 1vw;">עונה 13 פרק 5</p>
+                      <button type="button" class="btn btn-warning" style="padding:0 1vw 0 1vw; font-size: 1vw; font-weight: 500; border: .15vw solid #0075DE; border-radius: 0.3vw; background:#0075DE; color:white; margin:.2vw;">לצפייה</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18.5vw; margin: 1vw; border-radius: 0.7vw;">
+                    <img class="card-img-top" src="../assets/images/masterChef.jpg" alt="Card image cap" style="width: 18.5vw; height: 14.5vw; border-radius: 0.7vw 0.7vw 0 0;">
+                    <div class="card-body" style="width: 18.5vw; height: 4vw; text-align: center; padding:.2vw 0 0 0; background:#0075DE; color:white; border-radius: 0 0 0.7vw 0.7vw;">
+                      <p class="card-text" style="margin-bottom:0; font-size: 1.5vw; font-weight: 700;">מאסטר שף</p>
+                      <p class="card-text" style="margin-bottom:.5vw; font-size: 1vw;">עונה 9 פרק 10</p>
+                      <button type="button" class="btn btn-warning" style="padding:0 1vw 0 1vw; font-size: 1vw; font-weight: 500; border: .15vw solid #0075DE; border-radius: 0.3vw; background:#0075DE; color:white; margin:.2vw;">לצפייה</button>
+                    </div>
+                </div>
+        </div>
+        <div class="upcomingL2 d-flex flex-wrap" style="margin-top:3vw">
+                <div class="card" style="width: 18.5vw; margin: 1vw; border-radius: 0.7vw;">
+                    <img class="card-img-top" src="../assets/images/hasultan.jpg" alt="Card image cap" style="width: 18.5vw; height: 14.5vw; border-radius: 0.7vw 0.7vw 0 0;">
+                    <div class="card-body" style="width: 18.5vw; height: 4vw; text-align: center; padding:.2vw 0 0 0; background:#0075DE; color:white; border-radius: 0 0 0.7vw 0.7vw;">
+                      <p class="card-text" style="margin-bottom:0; font-size: 1.5vw; font-weight: 700;">הסולטן</p>
+                      <p class="card-text" style="margin-bottom:.5vw; font-size: 1vw;">עונה 3 פרק 206</p>
+                      <button type="button" class="btn btn-warning" style="padding:0 1vw 0 1vw; font-size: 1vw; font-weight: 500; border: .15vw solid #0075DE; border-radius: 0.3vw; background:#0075DE; color:white; margin:.2vw;">לצפייה</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18.5vw; margin: 1vw; border-radius: 0.7vw;">
+                    <img class="card-img-top" src="../assets/images/hapriHahasur.jpg" alt="Card image cap" style="width: 18.5vw; height: 14.5vw; border-radius: 0.7vw 0.7vw 0 0;">
+                    <div class="card-body" style="width: 18.5vw; height: 4vw; text-align: center; padding:.2vw 0 0 0; background:#0075DE; color:white; border-radius: 0 0 0.7vw 0.7vw;">
+                      <p class="card-text" style="margin-bottom:0; font-size: 1.5vw; font-weight: 700;">הפרי האסור</p>
+                      <p class="card-text" style="margin-bottom:.5vw; font-size: 1vw;">עונה 4 פרק 224</p>
+                      <button type="button" class="btn btn-warning" style="padding:0 1vw 0 1vw; font-size: 1vw; font-weight: 500; border: .15vw solid #0075DE; border-radius: 0.3vw; background:#0075DE; color:white; margin:.2vw;">לצפייה</button>
+
+                    </div>
+                </div>
+                <div class="card" style="width: 18.5vw; margin: 1vw; border-radius: 0.7vw;">
+                    <img class="card-img-top" src="../assets/images/pninaShhora.jpg" alt="Card image cap" style="width: 18.5vw; height: 14.5vw; border-radius: 0.7vw 0.7vw 0 0;">
+                    <div class="card-body" style="width: 18.5vw; height: 4vw; text-align: center; padding:.2vw 0 0 0; background:#0075DE; color:white; border-radius: 0 0 0.7vw 0.7vw;">
+                        <p class="card-text" style="margin-bottom:0; font-size: 1.5vw; font-weight: 700;">פנינה שחורה</p>
+                      <p class="card-text" style="margin-bottom:.5vw; font-size: 1vw;">עונה 1 פרק 37</p>
+                      <button type="button" class="btn btn-warning" style="padding:0 1vw 0 1vw; font-size: 1vw; font-weight: 500; border: .15vw solid #0075DE; border-radius: 0.3vw; background:#0075DE; color:white; margin:.2vw;">לצפייה</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18.5vw; margin: 1vw; border-radius: 0.7vw;">
+                    <img class="card-img-top" src="../assets/images/kuzgun.jpg" alt="Card image cap" style="width: 18.5vw; height: 14.5vw; border-radius: 0.7vw 0.7vw 0 0;">
+                    <div class="card-body" style="width: 18.5vw; height: 4vw; text-align: center; padding:.2vw 0 0 0; background:#0075DE; color:white; border-radius: 0 0 0.7vw 0.7vw;">
+                      <p class="card-text" style="margin-bottom:0; font-size: 1.5vw; font-weight: 700;">קוזגון</p>
+                      <p class="card-text" style="margin-bottom:.5vw; font-size: 1vw;">עונה 1 פרק 57</p>
+                      <button type="button" class="btn btn-warning" style="padding:0 1vw 0 1vw; font-size: 1vw; font-weight: 500; border: .15vw solid #0075DE; border-radius: 0.3vw; background:#0075DE; color:white; margin:.2vw;">לצפייה</button>
+                    </div>
+                </div>
+        </div>
+        <div class="card d-flex justify-content-center" style="width: 39vw; margin:8vw 0 5vw 0; border-radius: 0.7vw 0.7vw 0.7vw 0.7vw;">
+                <div class="card-body" style="width: 39vw; height: 3vw; text-align: center;padding:.2vw 0 0 0; background:#0075DE; color:white; border-radius: 0.7vw 0.7vw 0 0;">
+                    <p class="card-text" style="font-size: 1.5vw; font-weight: 700; padding-top:.3vw;">הודעות</p>
+                  </div>
+                <div class="card-body">
+                  <p class="card-text" style="font-size: 1.3vw; font-weight: 400; color:#707070; text-align: right; padding: 0 1.5vw 0 1.5vw; margin:0; ">,משתמשים יקרים</p>
+                  <p class="card-text" style="direction:rtl; font-size: 1.3vw; font-weight: 400; color:#707070; text-align: right; padding: 0 1.5vw .5vw 1.5vw; border-radius: 0 0 0.7vw 0.7vw;">
+                  לאור הפניות הרבות שאנו מקבלים על סטרימרים שהאפליקציה
+                    לא רצה בתאימות עליהם לפניכם רשימת הסטרימרים התומכים
+                    באפליקציה לאנדרואיד טיוי. הרשימה כוללת את כל הסטרימרים
+                    אשר בעלי מערכת אנדרואיד טיוי מאושרת על ידי גוגל.</p>
+                </div>
+        </div>
+        <div class="formTitle d-flex flex-row justify-content-center" style="width:100%;">
+                <div style="color:#0075DE; font-size: 1.5vw; font-weight: 700; margin: 0 2vw 1vw 2vw;">!הירשמו לקבלת עדכונים</div>
+        </div>
+        <div class="form-group has-search flex-row  justify-content-center">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="font-size: 1.1vw; padding: .2vw .4vw .2vw .4vw; border-radius: 0.3vw; background:#FFD54B; border: .1vw solid #FFD54B; color:white;">עדכנו אותי</button>
+                <input type="text" class="nav-item" placeholder="דוא''ל" style="width:18vw; direction:rtl; border: 0.16vw solid #0075DE; font-size: 1.1vw; font-weight: 300; border-radius: 0.3vw; margin:1.5vw; padding:.2vw .5vw .2vw 0;">
+                <input type="text" class="nav-item" placeholder="שם מלא" style="width:18vw; direction:rtl; border: 0.16vw solid #0075DE; font-size: 1.1vw; font-weight: 300; border-radius: 0.3vw; padding:.2vw .5vw .2vw 0;">
+        </div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="border: 2px solid  #0075DE">
+      <div class="modal-header" style="border: 0px solid; justify-content: center;">
+        <div class="modal-title" id="myModalLabel" style="font-size:30px; color: #0075DE; font-weight: 500;">!תודה שנרשמת</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; left: 20px;">
+          <span aria-hidden="true">&times;</span>
+        </button> 
+		</div>
+      <div class="modal-body" style="text-align: center;">
+        .משתמש/ת יקר/ה תודה שנרשמת לשירות העדכונים שלנו
+      </div>
+      <div class="modal-footer" style="border: 0px solid; justify-content: flex-start;">
+        <button type="button" class="btn btn-default" data-dismiss="modal" style="font-size: 20px; padding: .1vw .4vw .1vw .4vw; border-radius: 5px; background:#FFD54B; border: .1vw solid #FFD54B; color:white;">לעדכונים</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="card" style="width: 80vw; border-radius: .5vw; margin:3vw 0 3vw 0; border: .15vw solid #ffc107;">
+                <div class="card-body">
+                  <p class="card-text" style="font-size: 1.2vw; text-align: right; direction: rtl; color: #686868"> סדרות הינו אתר המציע חווית צפייה ישירה של סדרות שונות מהארץ ומחו"ל, במגוון רחב של ז'אנרים והתאמות לקהלי יעד שונים, בניהם משפחה
+                    ילדים, גיל הרך ועוד. לכל הסדרות מחו"ל הנמצאות באתר סדרות, מצורפות כתוביות בשפה העברית (נקרא גם "תרגום מובנה"). גם בסדרות הישראליות
+                    קיים תרגום ברוב המקרים. אתר סדרות מתעדכן על בסיס יומי, מאפשר צפייה ישירה מכל זמן ומקום בעולם, בחינם וללא הגבלה! צוות אתר סדרות שם
+                    דגש על שימוש בטכנולוגיות חדשניות על מנת להעביר לצופים את התוכן באיכות מקסימלית, ללא פשרות.</p>
+                </div>
+        </div>
+        <div class="footer container-fluid" style="background: #0075DE;">
+          <div id="toTop" class="invisible"><img id="arrowBtn" alt="" src="../assets/images/up-arrow.png"/></div>
+                <div class="row" style="text-align:right;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: 1vw; font-weight: 700; color:white;  width:8vw; padding-top:1.5vw;">שונות</p></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: 1vw; font-weight: 700; color:white;  width:8vw; padding-top:1.5vw;">מומלצות לצפייה</p></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: 1vw; font-weight: 700; color:white; padding-top:1.5vw;">ז'אנר</p></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1">
+                        <ul class="nav navbar-nav flex-row  justify-content-center" style="margin-top:1.5vw; width:12vw;">
+                            <li class="nav-item"><img class="icons" alt="" src="../assets/images/Icons/WhiteTwitter.png"/></li>
+                            <li class="nav-item"><img class="icons" alt="" src="../assets/images/Icons/WhiteTelegram.png"/></li>
+                            <li class="nav-item"><img class="icons" alt="" src="../assets/images/Icons/‏‏‏‏WhitInstagram.png"/></li>
+                            <li class="nav-item"><img class="icons" alt="" src="../assets/images/Icons/WhiteFacebook.png"/></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: .8vw; font-weight: 400;  width:8vw; color:white;">מידע</p></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: .8vw; font-weight: 400; width:8vw; color:white;">טורקיות</p></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: .8vw; font-weight: 400; color:white;">קומדיה</p></div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: .8vw; font-weight: 400;  width:8vw; color:white;">שאלות ותשובות</p></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: .8vw; font-weight: 400; width:8vw; color:white;">ישראליות</p></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: .8vw; font-weight: 400; color:white;">דרמה</p></div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: .8vw; font-weight: 400; width:8vw ;color:white;">מצב השרתים</p></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: .8vw; font-weight: 400; width:8vw; color:white;">נוער</p></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: .8vw; font-weight: 400; color:white;">ריאלטי</p></div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: .8vw; font-weight: 400;  width:8vw; color:white;">פרקים בתהליך העלאה</p></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: .8vw; font-weight: 400; width:8vw; color:white;">מצוירות</p></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"><p class="card-text" style="font-size: .8vw; font-weight: 400; color:white;">אנימציה</p></div>
+                </div>
+                <div class="row" style="text-align:right;">
+					          <div class="col-md-6"></div>
+                    <div class="col-md-1"><p class="card-text5" style="font-size: .8vw; font-weight: 400; width:8vw; color:white;">מכל הזמנים</p></div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1"><p class="card-text3" style="font-size: .8vw; font-weight: 400; color:white;">פעולה</p></div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-1"><p class="card-text2" style="font-size: .8vw; font-weight: 400; color:white;">מתח</p></div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-1"><p class="card-text4" style="font-size: .8vw; font-weight: 400; color:white;">ספורט</p></div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-1"><p class="card-text2" style="font-size: .8vw; font-weight: 400; color:white;">מדע בידיוני</p></div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-1"><p class="card-text4" style="font-size: .8vw; font-weight: 400; color:white;">חינוכי</p></div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-1"><p class="card-text2" style="font-size: .8vw; font-weight: 400; color:white;">טבע</p></div>
+                </div>
+                <div class="row" style="text-align:right;">
+                    <div class="col-md-8"></div>
+                    <div class="col-md-1"><p class="card-text4" style="font-size: .8vw; font-weight: 400; color:white;">פנטזיה</p></div>
+                </div>
+                <footer class="bg-light text-center text-lg-start">
+                  <div class="text-center p-3" style="background: #0075DE">
+                  <span class="card-text" style="font-size: .8vw; width:8vw; font-weight: 300; color:white; padding:1.5vw 1.5vw 0 0;  margin-right: 15vw;">©Liron Ben Zaken</span>
+                  <span class="card-text" style="font-size: .8vw; font-weight: 300; color:white; margin-left: 15vw;">תקנון</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400;">ראשי</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400; padding: .5vw;">•</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400;">סדרות</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400; padding: .5vw;">•</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400;">רכישת מנוי</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400; padding: .5vw;">•</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400;">אודות</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400; padding: .5vw;">•</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400;">סדרות</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400; padding: .5vw;">•</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400;">רכישת מנוי</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400; padding: .5vw;">•</span>
+                  <span style="color:white; font-size: 1vw; font-weight: 400;">צור קשר</span>
+                </div>
+                </footer>
+            </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.responsiveGallery.js"></script>
+<script type="text/javascript">
+  $(function () {
+$('.responsiveGallery-wrapper').responsiveGallery({
+animatDuration: 400, 
+$btn_prev: $('.responsiveGallery-btn_prev'),
+$btn_next: $('.responsiveGallery-btn_next')
+});
+  });
+  
+</script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous">
+</script>
+</html>
+
+
+
+
+
+
+

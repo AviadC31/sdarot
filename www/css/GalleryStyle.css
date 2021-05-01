@@ -1,0 +1,117 @@
+.responsiveGallery-container{
+	width: 100%;
+	position: relative;
+}
+.responsivGallery-pic{
+    border-radius: 5px;
+}
+.responsiveGallery-btn{
+	position:absolute;
+	top: 0;
+	z-index: 3;
+	display: block;
+	width: 5%;
+	height: 100%;
+}
+.responsiveGallery-btn_prev{
+	background:url(../../assets/images/arrow-left.png) center center no-repeat;
+	left:1%;
+}
+.responsiveGallery-btn_next{
+	background:url(../../assets/images/arrow-right.png) center center no-repeat;
+	right:1%;
+}
+
+.responsiveGallery-wrapper{
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 20%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+}
+.responsiveGallery-item{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	display: block;
+	width: 20%; 
+	opacity: 0;
+	visibility: hidden;
+}
+@media (max-width: 1440px){
+	.responsivGallery-pic{
+		width: 260px;
+		height: 260px;
+	}
+	.responsiveGallery-wrapper{
+		padding-top: 17%;
+	}
+}
+
+@media (max-width: 1000px){
+	.responsiveGallery-item{
+		width: 33.33%; 
+	}
+	.responsiveGallery-wrapper{
+		padding-top: 24%;
+	}
+	.responsivGallery-pic{
+		width: 230px;
+		height: 230px;
+	}
+}
+@media (max-width: 768px){
+	.responsiveGallery-wrapper{
+		padding-top: 27%;
+	}
+	.responsivGallery-pic{
+		width: 200px;
+		height: 200px;
+	}
+}
+@media (max-width: 578px){
+	.responsiveGallery-wrapper{
+		width: 60%;
+		padding-top: 46%;
+	}
+	.responsiveGallery-item{
+		width: 100%;
+	}
+	.responsiveGallery-btn{
+		width: 8%;
+	}
+	.responsivGallery-pic{
+		width: 2500px;
+		height: 250px;
+	}
+}
+.responsivGallery-link{
+	display: block;
+	width: 100%;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+.responsivGallery-pic{
+	width: 100%;
+}
+.w-responsivGallery-info{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 5%;
+	text-align: center;
+	color: #fff;
+}
+.responsivGallery-name{
+	font-size: 1.8vw;
+    color : #0075DE;
+}
+
